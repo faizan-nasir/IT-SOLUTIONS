@@ -1,0 +1,165 @@
+/* External Font Embedding */
+
+@font-face {
+  font-family: "robotobold";
+  src: url("fonts/roboto-bold-webfont.woff2") format("woff2"),
+    url("fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotolight";
+  src: url("fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotothin";
+  src: url("fonts/roboto-thin-webfont.woff2") format("woff2"),
+    url("fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Styling html elements */
+html {
+  font-family: "robotoregular", "robotolight", "robotothin", sans-serif;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+
+/* Global Classes */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+.flex-all {
+  display: flex;
+}
+.flex-end {
+  align-items: flex-end;
+}
+.flex-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-even {
+  justify-content: space-evenly;
+}
+.blue-bg{
+    background-color: #d0e4f4;
+}
+
+/* Nav Section starts*/
+.logo-container img{
+    width: 65px;
+    object-fit: cover;
+}
+.menu-bar{
+    font-size: 1.8rem;
+}
+/* Nav Section ends*/
+
+/* Hero page section starts*/
+.hero-section{
+    gap: 110px;
+}
+/* Hero left Starts */
+.hero-left{
+    width: 400px;
+    position: relative;
+}
+.img-source a{
+    color: #000;
+}
+.img-source{
+    position: absolute;
+    transform: translate();
+}
+.hero-left h1{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.hero-left p {
+    font-size: 1.2rem;
+    margin-block: 40px;
+}
+.btn{
+    text-decoration: none;
+    font-family: "robotoregular", sans-serif;
+    color: #000;
+    border: 1px black solid;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 1px;
+}
+.btn:hover{
+    background-color: #000;
+    color: white;
+}
+/* Hero left ends */
+
+/* Hero Right Starts */
+.space{
+    height: 180px;
+ 
+}
+.hero-right .space{
+    height: 120px;
+}
+.hero-right .square{
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+.right-img{
+    position: relative;
+    
+}
+.right-img img{
+    z-index: 50;
+    height: 588px;
+    width: 500px;
+    margin-right: 80px;
+    position: relative;
+}
+.right-img .square{
+    position: absolute;
+    transform: translate(45%,-165%);
+}
+.dotted{
+    background: url("../images/dots.png");
+}
+.right-img .dotted{
+    height: 400px;
+    width: 450px;
+    position: absolute;
+    transform: translate(-25%,-80%);
+    z-index: 1;
+
+}
+.rectangle{
+    height: 350px;
+    width: 58.839%;
+    transform: translate(70%,-30%);
+    overflow: hidden;
+}
+/* Hero Right ends */
+
+/* Hero page section ends*/
