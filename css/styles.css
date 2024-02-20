@@ -69,6 +69,9 @@ html {
 }
 
 /* Nav Section starts*/
+.navbar{
+  padding: 20px;
+}
 .logo-container img {
   object-fit: cover;
   width: 65px;
@@ -95,14 +98,17 @@ html {
 .img-source {
   display: inline-block;
   position: absolute;
-  transform: translate(-102%, 600%);
+  font-size: 1.2rem;
+}
+#img-source1 {
+  left: 0;
+  bottom: -100px;
 }
 .hero-left h1 {
   font-size: 4rem;
   line-height: 4rem;
 }
 .hero-left p {
-  font-size: 1.2rem;
   margin-block: 40px;
 }
 .btn {
@@ -161,7 +167,7 @@ html {
 .rectangle {
   bottom: -180px;
   height: 300px;
-  left: 450px;
+  left: 350px;
   position: absolute;
   width: 4000px;
 }
@@ -203,15 +209,21 @@ html {
   position: absolute;
   height: 1000px;
   width: 4000px;
-  left: 450px;
+  left: 350px;
   z-index: -2;
 }
 .services .dotted {
   position: absolute;
-  right: 750px;
+  right: 780px; 
   bottom: -275px;
   width: 4000px;
   height: 200px;
   z-index: -1;
 }
+#img-source2 {
+  left: 0;
+  bottom: -200px;
+}
 /* Section 2  Services ends */
+
+/* Section 3  begins */
