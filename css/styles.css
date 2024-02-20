@@ -2,47 +2,49 @@
 
 @font-face {
   font-family: "robotobold";
+  font-style: normal;
+  font-weight: normal;
   src: url("fonts/roboto-bold-webfont.woff2") format("woff2"),
     url("fonts/roboto-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "robotolight";
+  font-style: normal;
+  font-weight: normal;
   src: url("fonts/roboto-light-webfont.woff2") format("woff2"),
     url("fonts/roboto-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 @font-face {
   font-family: "robotothin";
+  font-style: normal;
+  font-weight: normal;
   src: url("fonts/roboto-thin-webfont.woff2") format("woff2"),
     url("fonts/roboto-thin-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "robotoregular";
+  font-style: normal;
+  font-weight: normal;
   src: url("fonts/roboto-regular-webfont.woff2") format("woff2"),
     url("fonts/roboto-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 /* Styling html elements */
+
 html {
-  font-family: "robotoregular", "robotolight", "robotothin", sans-serif;
-  word-break: break-all;
   box-sizing: border-box;
+  font-family: "robotoregular", "robotolight", "robotothin", sans-serif;
+  overflow-x: hidden;
+  word-break: break-all;
 }
 
 /* Global Classes */
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 20px;
+  padding-inline: 20px;
 }
 .flex-all {
   display: flex;
@@ -62,144 +64,154 @@ html {
 .space-even {
   justify-content: space-evenly;
 }
-.blue-bg{
-    background-color: #d0e4f4;
+.blue-bg {
+  background-color: #d0e4f4;
 }
 
 /* Nav Section starts*/
-.logo-container img{
-    width: 65px;
-    object-fit: cover;
+.logo-container img {
+  object-fit: cover;
+  width: 65px;
 }
-.menu-bar{
-    font-size: 1.8rem;
+.menu-bar {
+  font-size: 1.8rem;
 }
 /* Nav Section ends*/
 
 /* Hero page section starts*/
-.hero-section{
-    gap: 110px;
+.hero-section {
+  gap: 110px;
+  position: relative;
 }
 /* Hero left Starts */
-.hero-left{
-    width: 400px;
-    padding-top: 180px;
-    position: relative;
+.hero-left {
+  padding-top: 180px;
+  position: relative;
+  width: 400px;
 }
-.img-source a{
-    color: #000;
+.img-source a {
+  color: #000;
 }
-.img-source{
-    position: absolute;
-    transform: translate(-102%,600%);
-    display: inline-block;
+.img-source {
+  display: inline-block;
+  position: absolute;
+  transform: translate(-102%, 600%);
 }
-.hero-left h1{
-    font-size: 4rem;
-    line-height: 4rem;
+.hero-left h1 {
+  font-size: 4rem;
+  line-height: 4rem;
 }
 .hero-left p {
-    font-size: 1.2rem;
-    margin-block: 40px;
-    
+  font-size: 1.2rem;
+  margin-block: 40px;
 }
-.btn{
-    text-decoration: none;
-    font-family: "robotoregular", sans-serif;
-    color: #000;
-    border: 1px black solid;
-    padding: 20px 40px;
-    display: inline-block;
-    border-radius: 1px;
+.btn {
+  border-radius: 1px;
+  border: 1px black solid;
+  color: #000;
+  display: inline-block;
+  font-family: "robotoregular", sans-serif;
+  padding: 20px 40px;
+  text-decoration: none;
 }
-.btn:hover{
-    background-color: #000;
-    color: white;
+.btn:hover {
+  background-color: #000;
+  color: white;
 }
 /* Hero left ends */
 
 /* Hero Right Starts */
-.hero-right{
+.hero-right {
   padding-top: 100px;
 }
-.hero-right .space{
-    height: 120px;
+.hero-right .space {
+  height: 120px;
 }
-.hero-right .square{
-    height: 400px;
-    width: 400px;
-    position: relative;
+.hero-right .square {
+  height: 400px;
+  position: relative;
+  width: 400px;
 }
-.right-img{
-    position: relative;
-    
+.right-img {
+  position: relative;
 }
-.right-img img{
-    z-index: 50;
-    height: 588px;
-    width: 500px;
-    margin-right: 80px;
-    position: relative;
+.right-img img {
+  height: 588px;
+  margin-right: 80px;
+  position: relative;
+  width: 500px;
+  z-index: 50;
 }
-.right-img .square{
-    position: absolute;
-    top: -50px;
-    right: 0;
-    
+.right-img .square {
+  position: absolute;
+  right: 0;
+  top: -50px;
 }
-.dotted{
-    background: url("../images/dots.png");
+.dotted {
+  background: url("../images/dots.png");
 }
-.right-img .dotted{
-    height: 400px;
-    width: 450px;
-    position: absolute;
-    left: -100px;
-    bottom: -100px;
-    z-index: 1;
-
+.right-img .dotted {
+  bottom: -100px;
+  height: 400px;
+  left: -100px;
+  position: absolute;
+  width: 450px;
+  z-index: 1;
 }
-.rectangle{
-    height: 300px;
-    width: 64.533%;
-    position: absolute;
-    right: 0;
-    transform: translate(0,-40%);
-    overflow: hidden;
+.rectangle {
+  bottom: -180px;
+  height: 300px;
+  left: 450px;
+  position: absolute;
+  width: 4000px;
 }
 /* Hero Right ends */
 
 /* Hero page section ends*/
 
 /* Section 2  Services starts */
-.services{
+.services {
   position: relative;
-  
 }
-.image-wrap{
-  position: absolute;
+.image-wrap {
+  /* height: 470px; */
+  position: relative;
   top: 0;
-  height: 470px;
-  width: 635px;
-  transform: translate(0,180px);
+  transform: translate(0, 180px);
+  /* width: 635px; */
 }
-.image-wrap img{
-  width: 100%;
+.image-wrap img {
+  width: 700px;
 }
-.service-card{
+.service-card {
   position: absolute;
-  right: -568px;
+  right: 0px;
   top: 120px;
 }
-.service-card-gap{
+.service-card-gap {
   gap: 25px;
 }
-.service-card-item{
+.service-card-item {
   background: white;
-  padding: 50px;
+  padding: 40px;
 }
-.service-card-item p{
+.service-card-item p {
   width: 200px;
 }
-
+.rectangle2 {
+  top: 0;
+  position: absolute;
+  height: 1000px;
+  width: 4000px;
+  left: 450px;
+  z-index: -2;
+}
+.services .dotted {
+  position: absolute;
+  right: 750px;
+  bottom: -275px;
+  width: 4000px;
+  height: 200px;
+  z-index: -1;
+}
 /* Section 2  Services ends */
