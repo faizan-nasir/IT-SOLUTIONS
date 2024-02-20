@@ -90,7 +90,8 @@ html {
 }
 .img-source{
     position: absolute;
-    transform: translate();
+    transform: translate(-103%,600%);
+    display: inline-block;
 }
 .hero-left h1{
     font-size: 4rem;
@@ -99,6 +100,7 @@ html {
 .hero-left p {
     font-size: 1.2rem;
     margin-block: 40px;
+    
 }
 .btn{
     text-decoration: none;
@@ -155,9 +157,9 @@ html {
 
 }
 .rectangle{
-    height: 350px;
-    width: 58.839%;
-    transform: translate(70%,-30%);
+    height: 300px;
+    width: 64.533%;
+    transform: translate(55%,-47%);
     overflow: hidden;
 }
 /* Hero Right ends */
