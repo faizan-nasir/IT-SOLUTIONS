@@ -83,6 +83,7 @@ html {
 /* Hero left Starts */
 .hero-left{
     width: 400px;
+    padding-top: 180px;
     position: relative;
 }
 .img-source a{
@@ -90,7 +91,7 @@ html {
 }
 .img-source{
     position: absolute;
-    transform: translate(-103%,600%);
+    transform: translate(-102%,600%);
     display: inline-block;
 }
 .hero-left h1{
@@ -118,9 +119,8 @@ html {
 /* Hero left ends */
 
 /* Hero Right Starts */
-.space{
-    height: 180px;
- 
+.hero-right{
+  padding-top: 100px;
 }
 .hero-right .space{
     height: 120px;
@@ -143,7 +143,9 @@ html {
 }
 .right-img .square{
     position: absolute;
-    transform: translate(45%,-165%);
+    top: -50px;
+    right: 0;
+    
 }
 .dotted{
     background: url("../images/dots.png");
@@ -152,16 +154,52 @@ html {
     height: 400px;
     width: 450px;
     position: absolute;
-    transform: translate(-25%,-80%);
+    left: -100px;
+    bottom: -100px;
     z-index: 1;
 
 }
 .rectangle{
     height: 300px;
     width: 64.533%;
-    transform: translate(55%,-47%);
+    position: absolute;
+    right: 0;
+    transform: translate(0,-40%);
     overflow: hidden;
 }
 /* Hero Right ends */
 
 /* Hero page section ends*/
+
+/* Section 2  Services starts */
+.services{
+  position: relative;
+  
+}
+.image-wrap{
+  position: absolute;
+  top: 0;
+  height: 470px;
+  width: 635px;
+  transform: translate(0,180px);
+}
+.image-wrap img{
+  width: 100%;
+}
+.service-card{
+  position: absolute;
+  right: -568px;
+  top: 120px;
+}
+.service-card-gap{
+  gap: 25px;
+}
+.service-card-item{
+  background: white;
+  padding: 50px;
+}
+.service-card-item p{
+  width: 200px;
+}
+
+/* Section 2  Services ends */
